@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+      
+}
+.logo  h1{
+    margin-left: 70px;
+    color: #fff;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(216, 98, 196);
+    padding: 1rem;
+    height: 80px;
+}
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 1rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 40px;
+}
+
+.menu-toggle {
+    display: none;
+    background-color: rgb(91, 189, 219);
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+#home {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+.personal-info {
+    flex: 1;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.personal-info h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.personal-info h2 {
+    font-size: 30px;
+
+}
+.personal-info p {
+    font-size: 40px;
+    margin: 5px 0;
+    color: #221b1b;
+}
+.profile-picture img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 4px solid #000;
+    margin-right: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .personal-info {
+        margin-bottom: 20px;
+    }
+
+    .profile-picture img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .personal-info h1 {
+        font-size: 2rem;
+    }
+
+    .personal-info p {
+        font-size: 1rem;
+    }
+}
+/*============================== About section ==================================== */
+#about{
+    padding: 20px;
+    text-align: center;
+}
+#about h2{
+    color: #000000ec;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+#about p{
+    color: #252424;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+/* ================================= skills section ================================= */
+.skills {
+    text-align: center;
+    padding: 20px;
+}
+  
+  .skills h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+  
+  
+ /* ================== Experience ================== */
+
+ .experience {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(17, 17, 17, 0.1);
+}
+
+.experience h2 {
+    text-align: center;
+    color: #36a53f;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3 {
+    margin: 0 0 10px;
+    color: #cce250;
+}
+
+.experience-item p {
+    margin: 5px 0;
+    color: #e6c2c2;
+}
+
+/*  ========================== footer ==================== */
+.footer {
+    background-color: rgb(116, 29, 29);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-text p {
+    margin: 0;
+    padding: 10px;
+}
+
+.footer-nav {
+    margin: 10px 0;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-nav ul li {
+    display: inline;
+}
+
+.footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    margin-top: 10px;
+}
+
+.social-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
